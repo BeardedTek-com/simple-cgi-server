@@ -47,10 +47,6 @@ type config struct {
 	AliasList        []*configAlias
 	HandlerList      []*configHandler
 	Logging          *configLogging
-	JPG_RESOLUTION   string
-	MJPG_RESOLUTION  string
-	MJPG_FPS         string
-	SOURCE_URL       string
 }
 
 func loadConfig(s *cgiserver.Server) (*config, error) {
